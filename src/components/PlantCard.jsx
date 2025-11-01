@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from './Button'
 import Bag from './Bag'
+import { IoIosArrowForward } from "react-icons/io";
 
 const PlantCard = ({img, name, des, price, details='False'}) => {
   return (
@@ -48,13 +49,14 @@ const PlantCard = ({img, name, des, price, details='False'}) => {
             <div className={`${details == "True" ? 'text-left w-full pl-[66px] max-[1600px]:pl-[40px] ' : null}`}>
                 {details == "False" ? <p className='text-[23px]'>Indoor Plant</p> : null}
                 <p className={`text-[38px] ${details == "False" ? 'mb-[19px]' : 'mb-[9px] max-[1600px]:text-[30px]'}`}>{name}</p>
+                {details == "False" ? <div className='absolute right-10 top-[710px] text-[30px]'><IoIosArrowForward /></div> : null}
                 {details == "False" ? <Button /> : null}
             </div>
 
             {details == "False" ? <div className='flex gap-3 mt-[36px]'>
-                <div className='rounded-full h-3 w-3 bg-white'></div>
-                <div className='rounded-full h-3 w-3 bg-white'></div>
-                <div className='rounded-full h-3 w-3 bg-white'></div>
+                <div className='rounded-full h-[6px] w-[21px] bg-white'></div>
+                <div className='rounded-full h-[6px] w-[6px] bg-white'></div>
+                <div className='rounded-full h-[6px] w-[6px] bg-white'></div>
             </div> : 
 
             <div className={`text-left max-w-[372px] max-[1600px]:max-w-[335px]`}>
