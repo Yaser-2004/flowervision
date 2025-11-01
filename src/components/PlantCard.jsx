@@ -2,14 +2,6 @@ import React from 'react'
 import Button from './Button'
 import Bag from './Bag'
 
-{/* <div
-  class="w-[512px] h-[624px] mt-[89px] bg-[#ED303C] rounded-[50px] border-t-[10px] borter-t-white
-  [--r:60px] [--s:350px] [--a:62deg] [--p:50%]
-  [--_m:var(--r),#000_calc(100%_-_1px),#0000]
-  [--_d:calc((var(--s)_+_var(--r))*cos(var(--a)))]
-  [mask:radial-gradient(var(--r)_at_calc(var(--p)_+_var(--_d))_var(--_m)),radial-gradient(var(--r)_at_calc(var(--p)_-_var(--_d))_var(--_m)),radial-gradient(var(--s)_at_var(--p)_calc(-1*sin(var(--a))*var(--s)),#0000_100%,#000_calc(100%_+_1px))_0_calc(var(--r)*(1_-_sin(var(--a))))_no-repeat,linear-gradient(90deg,#000_calc(var(--p)_-_var(--_d)),#0000_0_calc(var(--p)_+_var(--_d)),#000_0))]"
-></div> */}
-
 const PlantCard = ({img, name, des, price, details='False'}) => {
   return (
         <div className='relative max-sm:hidden'>
@@ -27,11 +19,8 @@ const PlantCard = ({img, name, des, price, details='False'}) => {
             </linearGradient>
 
             <linearGradient id='gradientDetail' x1="0%" y1="0%" x2="100%" y2="100%">
-                {/* Top-left white */}
                 <stop offset="0%" stopColor="rgba(46, 46, 46, 1)" />
-                {/* Middle black */}
                 <stop offset="50%" stopColor="white" />
-                {/* Bottom-right white */}
                 <stop offset="100%" stopColor="rgba(46, 46, 46, 1)" />
             </linearGradient>
             </defs>

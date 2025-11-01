@@ -16,28 +16,16 @@ const Card = ({bestO2 = 'False', reverse = 'False', trendy  ='False', title, pla
                 <defs>
                     {bestO2 == "True" ?
                     <linearGradient id='gradient1' x1="0%" y1="0%" x2="100%" y2="100%">
-                    {/* Top-left white */}
                     <stop offset="0%" stopColor="white" />
-                    {/* Middle black */}
                     <stop offset="50%" stopColor="rgba(46, 46, 46, 1)" />
-                    {/* Bottom-right white */}
                     <stop offset="100%" stopColor="white" />
                     </linearGradient>
                     :
                     <linearGradient id="gradientbest" x1="0%" y1="0%" x2="100%" y2="100%">
-                        {/* Top-left — pure white */}
-                        <stop offset="0%" stopColor="white" />
                         
-                        {/* Top-right (25%) — light gray */}
+                        <stop offset="0%" stopColor="white" />
                         <stop offset="25%" stopColor="#232323ff" />
-
-                        {/* Center — darker gray */}
-                        {/* <stop offset="50%" stopColor="#979797ff" /> */}
-
-                        {/* Bottom-left (75%) — light gray */}
                         <stop offset="75%" stopColor="#d8d8d8ff" />
-
-                        {/* Bottom-right — pure white */}
                         <stop offset="100%" stopColor="white" />
                     </linearGradient>
                     }
